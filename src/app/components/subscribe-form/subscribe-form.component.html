@@ -1,0 +1,5 @@
+<form [formGroup]="subscribeForm">
+    <input type="email" name="email" placeholder="Your email address..." formControlName="email" [ngClass]="{'error': email?.invalid && email?.touched}">
+    <small *ngIf="email?.invalid && email?.touched">Please provide a valid email address</small>
+    <button (click)="emailSubscribe()" [ngClass]="{'error': email?.invalid && email?.touched }">Notify Me</button>
+</form>

@@ -1,0 +1,41 @@
+$icons-border-color: #eee;
+$icons-bg-hover: hsl(223, 87%, 63%);
+$color-primary: hsl(0, 0%, 59%);
+
+footer {
+    margin: 70px 0 48px;
+    text-align: center;
+    .socials {
+        margin: 0 0 22px;
+        display: flex;
+        justify-content: center;
+        gap: 13px;
+        a {
+            width: 30px;
+            height: 30px;
+            border: 1px solid $icons-border-color;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            &:hover {
+                background: $icons-bg-hover;
+                & g {
+                    fill: #ffffff;
+                }
+            }
+        }
+    }
+    small {
+        font-size: 12px;
+        color: $color-primary;
+    }
+}
+
+@media(max-width: 650px) {
+    footer {
+        margin: 115px 0 48px;
+        small {
+            font-size: 10px;
+        }
+    }
+}

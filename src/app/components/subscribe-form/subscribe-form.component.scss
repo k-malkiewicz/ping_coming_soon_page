@@ -1,0 +1,68 @@
+$input-color: hsl(0, 0%, 93%);
+$input-error: hsl(354, 100%, 66%);
+$button-bg: hsl(223, 87%, 63%);
+$button-bg-hover: hsl(224, 87%, 70%);
+
+form {
+    width: 650px;
+    margin: 40px auto 0;
+    position: relative;
+    input {
+        width: 420px;
+        padding: 17px 28px;
+        font-size: 16px;
+        border: 3px solid $input-color;
+        border-radius: 30px;
+        &.error {
+            border: 2px solid $input-error;
+        }
+    }
+    button {
+        width: 200px;
+        margin: 0 0 0 15px;
+        padding: 17px 28px;
+        background: $button-bg;
+        font-size: 16px;
+        font-weight: 600;
+        color: hsl(0, 0%, 100%);
+        border-radius: 30px;
+        cursor: pointer;
+        &:hover {
+            background: $button-bg-hover;
+        }
+    }
+    small {
+        color: $input-error;
+        font-size: 12px;
+        font-weight: 600;
+        font-style: italic;
+        position: absolute;
+        bottom: -22px;
+        left: 35px;
+    }
+}
+
+@media(max-width: 670px) {
+    form {
+        margin: 35px auto 0;
+        width: 280px;
+        min-height: 122px;
+        input,
+        button {
+            width: 100%;
+            margin: 0;
+            padding: 12px 30px;
+            font-size: 12px;
+        }
+        button {
+            margin: 10px 0 0;
+        }
+        small {
+            position: static;
+            display: block;
+            margin: 5px 0 15px;
+            font-size: 10px;
+            text-align: center;
+        }
+    }
+}

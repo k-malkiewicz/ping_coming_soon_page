@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+$font-stack: 'Libre Franklin', sans-serif;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: $font-stack;
+}
+
+input,
+button {
+    border: none;
+    font-family: $font-stack;
+}
