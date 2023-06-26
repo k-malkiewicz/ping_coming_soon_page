@@ -4,28 +4,28 @@ $button-bg: hsl(223, 87%, 63%);
 $button-bg-hover: hsl(224, 87%, 70%);
 
 form {
-    width: 650px;
-    margin: 40px auto 0;
+    width: 40.625rem;
+    margin: 2.5rem auto 0;
     position: relative;
     input {
-        width: 420px;
-        padding: 17px 28px;
-        font-size: 16px;
-        border: 3px solid $input-color;
-        border-radius: 30px;
+        width: 26.25rem;
+        padding: 1.0625rem 1.75rem;
+        font-size: 1rem;
+        border: .1875rem solid $input-color;
+        border-radius: 1.875rem;
         &.error {
-            border: 2px solid $input-error;
+            border: .125rem solid $input-error;
         }
     }
     button {
-        width: 200px;
-        margin: 0 0 0 15px;
-        padding: 17px 28px;
+        width: 12.5rem;
+        margin: 0 0 0 .9375rem;
+        padding: 1.0625rem 1.75rem;
         background: $button-bg;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 600;
         color: hsl(0, 0%, 100%);
-        border-radius: 30px;
+        border-radius: 1.875rem;
         cursor: pointer;
         &:hover {
             background: $button-bg-hover;
@@ -33,35 +33,35 @@ form {
     }
     small {
         color: $input-error;
-        font-size: 12px;
+        font-size: .75rem;
         font-weight: 600;
         font-style: italic;
         position: absolute;
-        bottom: -22px;
-        left: 35px;
+        bottom: -1.375rem;
+        left: 2.1875rem;
     }
 }
 
 @media(max-width: 670px) {
     form {
-        margin: 35px auto 0;
-        width: 280px;
-        min-height: 122px;
+        margin: 2.1875rem auto 0;
+        width: 17.5rem;
+        min-height: 7.625rem;
         input,
         button {
             width: 100%;
             margin: 0;
-            padding: 12px 30px;
-            font-size: 12px;
+            padding: .75rem 1.875rem;
+            font-size: .75rem;
         }
         button {
-            margin: 10px 0 0;
+            margin: .625rem 0 0;
         }
         small {
             position: static;
             display: block;
-            margin: 5px 0 15px;
-            font-size: 10px;
+            margin: .3125rem 0 .9375rem;
+            font-size: .625rem;
             text-align: center;
         }
     }
