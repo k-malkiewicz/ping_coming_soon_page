@@ -8,7 +8,7 @@ This is a solution to the [Ping coming soon page challenge on Frontend Mentor](h
 
 ## Links
 
-- Live Site URL ()
+- Live Site URL (https://ping-coming-soon-km9.netlify.app)
 
 ## Built with
 
